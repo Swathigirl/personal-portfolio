@@ -1,0 +1,28 @@
+<head>
+ <meta charset="utf-8" />
+</head>
+{% extends "layout.html" %}
+{% block content %}
+<div class = "about">
+  <h1 style = "color:magenta;">ABOUT ME:</h1>
+  <p style="color:tomato;font-size:12px;">
+    A little about me! <i>This is sort of my portfolio.</i></p><br>
+    <p id="little" style="color:blue;font-size:10px;"></p>
+  <script>
+    let points = ["MY NAME: N.SWATHI","MY 10TH PERCENTAGE: 95%(10 CGPA) ","MY 12TH STREAM AND PERCENTAGE: PCM WITH COMPUTER SC, 94%","GRADUATED IN ALONG WITH PERCENTAGE: BUSINESS ADMINISTRATION(77% AGG.)","CURRENTLY PURSUING: PGDCA","CURRENT INTERN AT: RAYS IT & DESIGN WORLD, RAIPUR","CURRENT CITY: RAIPUR,CHHATTISGARH","SCHOOLS STUDIED IN: OP JINDAL MODERN SCHOOL,HOLY CROSS SENIOR SECONDARY SCHOOL "," UNIVERSITY ATTENDED: MATS UNIVERSITY, RAIPUR","CORE COMPETENCIES: PYTHON, C, C++, C#, HTML, JAVASCRIPT, CSS, BOOTSTRAP, DJANGO, GOOGLE SHEETS, ADVANCED EXCEL, MS OFFICE, TALLY PRIME WITH GST, ENGLISH COMMUNICATION AND PRESENTATION SKILLS", "LANGUAGES KNOWN: ENGLISH, HINDI, TAMIL, MALAYALAM", "HOBBIES: READING, LISTENING TO MUSIC, WATCHING SPORTS, CODING, LEARNING LANGUAGES", "MY PROJECTS INCLUDE: SCHOOL MANAGEMENT SYSTEM, PERSONAL PORTFOLIO AND PERSONAL BLOGGING WEBSITE", "MY LINKEDIN URL: https://www.linkedin.com/in/n-swathi-823bbb22a", "MY GITHUB ACCOUNT URL: https://github.com/Swathigirl", "MY EMAIL_ID: sona18laureate@gmail.com"];
+    let strng = "<ul>";
+    points.forEach(ThisFunc);
+    strng+= "</ul>";
+    
+    document.getElementById("little").innerHTML= strng;
+    
+    function ThisFunc(value) 
+    {
+      strng+= "<li>" + value + "</li>" +"<br>";}
+  </script>
+  <br>
+  <p style="color:violet;font-size:10px;"><i>Feel free to contact me! Currently I am a student cum intern in RAYS IT WORLD & DESIGN at Raipur.Also looking out for opportunities to collaborate on more projects.</i></p>
+  <br><br>
+  <center><p style="color:red;font-size:8px;">Thank you very much for visiting my page!</p></center>
+</div>
+{% endblock %}
