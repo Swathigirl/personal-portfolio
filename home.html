@@ -1,0 +1,37 @@
+<head>
+ <meta charset="utf-8" />
+</head>
+{% extends "layout.html" %}
+{% block content %}
+<div class = "home">
+  <center><h1 style= "color:tomato;">
+   WELCOME TO MY WEBPAGE EVERYONE! </h1></center>
+   <br><br><p style ="color:darkred;">
+      🌺Excited to have you all here! Hope you enjoy knowing about me!🌺
+      </p>
+      <p style ="color:red;">
+        So guys, I am learning Flask.Click the <b><i>Know me! </i></b>button below to learn more about it.Since, I am dealing with it, I thought why not make my personal page.. Great idea.Isn't it?</p>
+       <center><button type="button" onclick = "myFunc()" style="background-color:orange;border:2px solid black;color:white;">Know Me!</button></center>
+        <p id="know" style = "color:green;text-decoration:underline;"></p>
+        <script>
+            let text = "Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.";
+ function myFunc() {
+   document.getElementById("know").innerHTML= text;
+ }
+        </script>
+        <br>
+        <p style="color:brown;">I have basic python knowledge along with Django.Wondering what Django is? Click the button below to know about it!</p><br>
+        <center>
+          <button type="button"onclick="coolFunc()"style="background-color:orange;border:2px solid black;color:white;">What is Django?🤔</button>
+        </center>
+        <p id="check" style="color:green;text-decoration:underline;"></p>
+        <script>
+          let strings ="Django is a free and open-source, Python-based web framework that follows the model–template–views architectural pattern. It is maintained by the Django Software Foundation, an independent organization established in the US as a 501 non-profit.";
+          function coolFunc() {
+            document.getElementById("check").innerHTML= strings;
+          }
+        </script>
+        <br>
+ <center><p style ="color:tomato;">I hope you have a swell time going through my website🌼</p></center>
+</div>
+{% endblock %}
